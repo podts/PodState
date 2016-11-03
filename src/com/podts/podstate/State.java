@@ -1,12 +1,12 @@
 package com.podts.podstate;
 
-public abstract class State {
+public interface State {
 	
-	public void onEnter(Object o) {
+	public default void onEnter(Object o) {
 		
 	}
 	
-	public void onLeave(Object o) {
+	public default void onLeave(Object o) {
 		
 	}
 	
